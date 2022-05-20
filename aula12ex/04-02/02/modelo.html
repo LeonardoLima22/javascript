@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Checkador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            Ano de Nascimento:
+            <input type="number" name="txtano" id="txtano">
+            
+            <p>
+                Sexo:
+                <input type="radio" name="gen" id="masc" checked>
+                <label for="gen">Homem</label>
+                <input type="radio" name="gen" id="femi">
+                <label for="gen">Mulher</label>
+            </p>
+            <p>
+                <input type="button" value="Confirmar" onclick="confirmar()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima corretamente.
+        </div>
+    </section>
+    <footer>
+        <p>&copy; LeonardoLima</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

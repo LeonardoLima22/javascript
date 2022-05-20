@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+</head>
+<body>
+    <h1>Escreva seu país de origem, por favor</h1>
+    <input type="text" name="txtp" id="txtp">
+    <input type="button" value="confirmar" onclick="conf()">
+    
+    <div id="res">
+
+    </div>
+
+    <script>
+        function conf() {
+            var txt = document.getElementById('txtp').value
+            var res = document.getElementById('res')
+            if (txt == 'Brasil') {
+                res.innerHTML = `<p>Você mora em ${txt} portanto você esta <strong>FODIDO</strong>, você é um Brasileiro! &#x1F921;</p>`
+            } else {
+                res.innerHTML = `<p>Você mora ${txt}, portanto você é <strong>ESTRANGEIRO</strong>, parabéns!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
